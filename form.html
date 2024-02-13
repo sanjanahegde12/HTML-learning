@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" autofocus="on" autocomplete="on" action="./anchor.html">
+        <fieldset>
+            <legend>Employee Details</legend>
+            <center>
+        <label for="username">Name:</label>
+        <input type="text" id="username" name="username" placeholder="Caps only"><br><br>
+
+        <label for="comp">Company Name:</label>
+        <input type="text" id="comp" name="comp" value="IBM" readonly><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" disabled><br><br>
+
+        <label for="gender" >Gender:</label>
+        <input type="radio" id="gender" name="gender" value="male">Male
+        <input type="radio" id="gender" name="gender" value="female">Female
+        <input type="radio" id="gender" name="gender" value="transgender">Transgender<br><br>
+
+        <label for="contact" >Contact:</label>
+        <input type="tel" id="contact" name="contact" maxlength="10" minlength="10"><br><br>
+
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" required><br><br>
+
+        <label for="doj">Date of joining:</label>
+        <input type="date" id="doj" name="doj" max="2023-12-10" min="2023-11-10"><br><br>
+
+        <label for="skills">Skills:</label>
+        <input type="range" id="skills" name="skills" >Web-Technology<br>
+        <input type="range" id="skills" name="skills">Java-Framework<br>
+        <input type="range" id="skills" name="skills">SQL<br><br>
+
+        <label for="qualification">Qualification:</label>
+        <h5>
+            UG:
+            <input type="checkbox" name="qualification" id="qualification" value="BE">BE
+            <input type="checkbox" name="qualification" id="qualification" value="BTECH">BTECH
+            <input type="checkbox" name="qualification" id="qualification" value="BCA">BCA
+        </h5>
+
+        <h5>
+            PG:
+            <input type="checkbox" name="qualification" id="qualification" value="MTECH" checked>MTECH
+            <input type="checkbox" name="qualification" id="qualification" value="MCA">MCA
+        </h5>
+
+        <label for="pl">Preffered Location:</label>
+        <select name="pl" id="pl">
+            <optgroup label="Karnataka">
+                <option value="km">Manyata</option>
+                <option value="ke">Embassy</option>
+            </optgroup>
+            <optgroup label="Maharastra">
+                <option value="mw">Wakad</option>
+                <option value="md">Deccan</option>
+            </optgroup>
+            <optgroup label="Delhi">
+                <option value="dn">Noida</option>
+                <option value="dg">Gurgram</option>
+            </optgroup>
+        </select><br><br>
+
+        <label  for="adress">Adress:</label>
+        <textarea id="adress" name="adress" ></textarea><br><br>
+        <hr>
+        <input type="submit">
+        <input type="reset">
+        </center>
+        </fieldset>
+    </form>
+</body>
+</html>
